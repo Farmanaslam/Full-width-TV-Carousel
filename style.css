@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.splide__arrow {
+  opacity: 0;
+}
+.splide__arrow:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+.splide__slide img {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+.img-caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+  padding: 20px 40px 20px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.img-caption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: rgba(206, 179, 26, 0.699);
+}
+.topbar{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  height: 82px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+ 
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 555;
+}
+
+.logo-img{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+ width: 60px;
+ height: 60px;
+ z-index: 555;
+
+}
+.school-name{
+  font-size: 22px;
+  position: absolute;
+  top: 30px;
+  left: 100px; 
+  z-index: 555;
+}
